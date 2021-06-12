@@ -98,8 +98,6 @@ namespace Iteration
 
             Console.WriteLine("2) (1) ArrayList implicit version");
             ArrayList list3 = new ArrayList {1, 2, 3, 4, 5};
-            for (int i = 0; i < 5; i++)
-                list3[i] = i;
 
             foreach (int e in list3)
                 Console.WriteLine(e);
@@ -107,8 +105,6 @@ namespace Iteration
 
             Console.WriteLine("2) (2) ArrayList explicit version");
             ArrayList list4 = new ArrayList { 1, 2, 3, 4, 5 };
-            for (int i = 0; i < 5; i++)
-                list4[i] = i;
             IEnumerator it2 = list4.GetEnumerator();
 
             while (it2.MoveNext())
